@@ -5,7 +5,7 @@ using namespace std;
 int pow(int n, int m)
 {
     int p=1;
-    while(m>0) p=p*n;
+    while(m>0) {p=p*n; m--;}
     return p;
 }
 
