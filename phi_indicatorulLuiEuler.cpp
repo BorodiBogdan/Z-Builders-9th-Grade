@@ -30,7 +30,7 @@ int main()
         if(n%d==0)
         {
             int e=0;
-            while(cn%d==0) {cn=cn/d; e++;}
+            while(n%d==0) {n=n/d; e++;}
             p=p*pow(d,e-1)*(d-1); ///cu mov
         }
         d++;
