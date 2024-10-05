@@ -37,6 +37,6 @@ int main()
         if(d*d>n && n>1) d=n;
     }
 
-    cout<<n;
+    cout<<p;
     return 0;
 }
