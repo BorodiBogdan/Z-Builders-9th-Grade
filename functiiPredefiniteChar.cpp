@@ -29,6 +29,13 @@ int main()
 
         strtok()
 
+        char *token=strtok(s, sep) s -> propozitia; sep -> separatorii
+        while(token!=NULL) // in token avem cuvintele pe rand
+        {
+            //prelucram cuvantul
+            token=strtok(NULL, sep); //trecem la urmatorul cuvant, daca nu mai exista token va avea val NULL
+        }
+        
         for(int i=0;s[i];++i)
         if(strchr("aeiou",s[i])) -cautam
         {
