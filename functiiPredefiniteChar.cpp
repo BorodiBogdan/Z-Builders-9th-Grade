@@ -44,6 +44,9 @@ int main()
             strcpy(s+i+1,aux); -copiem in s de la poz i+1 sirul aux
         }
 
+        strcmp(string s1, string s2) -  returneaza un nr < 0 daca s1 e mai mic alfabetic decat s2
+                                        return 0 daca s1 ii egal cu s2
+                                        return un nr > 0 daca s1 e mai mare alfabetic decat s2
 
     */
 
