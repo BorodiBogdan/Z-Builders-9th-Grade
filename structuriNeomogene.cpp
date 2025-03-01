@@ -24,21 +24,46 @@ struct NUME{ ///cum se numeste tipul de date
     char cuv[30];   ///campuri
 }var, V[101],M[101][101]; ///zona declarativa
 
+struct numeTip{
+    char nume[50];
+    int zi,luna,an;
+    bool gen;
+}b;
+
+struct{
+
+    int val;
+    int nc;
+
+}x;
+
+struct
+{
+    struct{
+        int zi,luna,an;
+    }data;
+    char nume[50];
+}var;
+
+numeTip a;
 
 int main()
 {
-    /*
-        for(int i=0;i<s.size();i++)
-        {
-            lucrez cu fiecare caracter
-        }
-    */
-    cin>>var.n>>var.cuv;
+   /* cin.getline(a.nume,50);
+    cin>>a.zi>>a.luna>>a.an>>a.gen;
+    cout<<a.nume<<endl<<a.zi<<'.'<<a.luna<<'.'<<a.an<<"\n"<<a.gen;*/
+    /*cin>>x.val;
+    int c=x.val;
+    if(c==0) x.nc=1;
+    while(c)
+    {
+        x.nc++;
+        c=c/10;
+    }
+    cout<<x.nc;*/
 
-    var.nCif=ncif(var.n);
-    var.par=!(var.n&1);
-
-    cout<<var.n<<" "<<var.nCif<<" "<<var.par<<" "<<var.cuv;
+    cin>>var.nume>>var.data.zi>>var.data.luna>>var.data.an;
+    cout<<var.nume<<endl<<var.data.zi<<" "<<var.data.luna<<" "<<var.data.an;
 
     return 0;
 }
