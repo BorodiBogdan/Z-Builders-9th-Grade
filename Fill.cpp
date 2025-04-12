@@ -6,8 +6,9 @@ int A[105][105],n,m,cnt;
 
 void fill(int i, int j)
 {
+  //lucram cu elementul de la pozitia curenta, apoi
   //marcam cu o valoare convenabila
-    A[i][j]=2;
+    A[i][j]=2; 
     //cautam urmatorul vecin
     if(i>1 && A[i-1][j]==1) fill(i-1,j); //N
     if(i<n && A[i+1][j]==1) fill(i+1,j); //S
