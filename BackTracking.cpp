@@ -42,3 +42,42 @@ int main()
     back(1); ///de la ce pozitie incepe generarea
     return 0;
 }
+/*
+cu vector de frecv
+#include <fstream>
+using namespace std;
+
+ifstream cin("permutari.in");
+ofstream cout("permutari.out");
+
+int x[10],n,F[10];
+
+void afis()
+{
+    for(int i=1;i<=n;i++)
+        cout<<x[i]<<" ";
+    cout<<"\n";
+}
+
+void back(int k)
+{
+    for(int i=1;i<=n;i++)
+        if(!F[i])
+        {
+            x[k]=i;
+            F[i]=1;
+            if(k==n) afis();
+            else back(k+1);
+            F[i]=0;
+        }
+}
+
+int main()
+{
+    cin>>n;
+    back(1);
+    return 0;
+}
+
+*/
+
